@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Study Portal</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #37352f;
+            --border-color: #e9e9e6;
+            --hover-bg: #f7f7f5;
+            --accent-muted: #f1f1ef;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+        }
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            color: #7c7a77;
+            font-size: 1rem;
+            margin: 0;
+        }
+        .subject-section {
+            margin-bottom: 35px;
+        }
+        .subject-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        .card {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.95rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.15s ease, border-color 0.15s ease;
+        }
+        .card:hover {
+            background: var(--hover-bg);
+            border-color: #d3d3d0;
+        }
+        .icon {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+        .ms-icon {
+            color: #4c6ef5;
+        }
+        .p-icon {
+            color: #e8590c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Kingsley Exam Portal</h1>
+        <p class="subtitle">Personal Revision Database • Edexcel IGCSE</p>
+    </header>
+
+    <div class="subject-section">
+        <div class="subject-title">🧮 Further Pure Mathematics</div>
+        <div class="grid">
+            <a href="/Further_Pure_Maths/P1" class="card"><span class="icon p-icon">📄</span> Paper 1</a>
+            <a href="/Further_Pure_Maths/P1_MS" class="card"><span class="icon ms-icon">📝</span> Paper 1 MS</a>
+            <a href="/Further_Pure_Maths/P2" class="card"><span class="icon p-icon">📄</span> Paper 2</a>
+            <a href="/Further_Pure_Maths/P2_MS" class="card"><span class="icon ms-icon">📝</span> Paper 2 MS</a>
+        </div>
+    </div>
+
+    <div class="subject-section">
+        <div class="subject-title">📐 Mathematics B</div>
+        <div class="grid">
+            <a href="/Math_B/P1" class="card"><span class="icon p-icon">📄</span> Paper 1</a>
+            <a href="/Math_B/P1_MS" class="card"><span class="icon ms-icon">📝</span> Paper 1 MS</a>
+            <a href="/Math_B/P2" class="card"><span class="icon p-icon">📄</span> Paper 2</a>
+            <a href="/Math_B/P2_MS" class="card"><span class="icon ms-icon">📝</span> Paper 2 MS</a>
+        </div>
+    </div>
+
+    <div class="subject-section">
+        <div class="subject-title">⚛️ Physics</div>
+        <div class="grid">
+            <a href="/Physics/P1" class="card"><span class="icon p-icon">📄</span> Paper 1</a>
+            <a href="/Physics/P1_MS" class="card"><span class="icon ms-icon">📝</span> Paper 1 MS</a>
+            <a href="/Physics/P2" class="card"><span class="icon p-icon">📄</span> Paper 2</a>
+            <a href="/Physics/P2_MS" class="card"><span class="icon ms-icon">📝</span> Paper 2 MS</a>
+        </div>
+    </div>
+
+    <div class="subject-section">
+        <div class="subject-title">🧪 Chemistry</div>
+        <div class="grid">
+            <a href="/Chemistry/P1" class="card"><span class="icon p-icon">📄</span> Paper 1</a>
+            <a href="/Chemistry/P1_MS" class="card"><span class="icon ms-icon">📝</span> Paper 1 MS</a>
+            <a href="/Chemistry/P2" class="card"><span class="icon p-icon">📄</span> Paper 2</a>
+            <a href="/Chemistry/P2_MS" class="card"><span class="icon ms-icon">📝</span> Paper 2 MS</a>
+        </div>
+    </div>
+
+    <div class="subject-section">
+        <div class="subject-title">📈 Economics</div>
+        <div class="grid">
+            <a href="/Economics/P1" class="card"><span class="icon p-icon">📄</span> Paper 1</a>
+            <a href="/Economics/P1_MS" class="card"><span class="icon ms-icon">📝</span> Paper 1 MS</a>
+            <a href="/Economics/P2" class="card"><span class="icon p-icon">📄</span> Paper 2</a>
+            <a href="/Economics/P2_MS" class="card"><span class="icon ms-icon">📝</span> Paper 2 MS</a>
+        </div>
+    </div>
+
+    <div class="subject-section">
+        <div class="subject-title">📊 Accounting</div>
+        <div class="grid">
+            <a href="/Accounting/P1" class="card"><span class="icon p-icon">📄</span> Paper 1</a>
+            <a href="/Accounting/P1_MS" class="card"><span class="icon ms-icon">📝</span> Paper 1 MS</a>
+            <a href="/Accounting/P2" class="card"><span class="icon p-icon">📄</span> Paper 2</a>
+            <a href="/Accounting/P2_MS" class="card"><span class="icon ms-icon">📝</span> Paper 2 MS</a>
+        </div>
+    </div>
+
+    <div class="subject-section">
+        <div class="subject-title">📖 English Literature</div>
+        <div class="grid">
+            <a href="/English_Literature/P1" class="card"><span class="icon p-icon">📄</span> Paper 1</a>
+            <a href="/English_Literature/P1_MS" class="card"><span class="icon ms-icon">📝</span> Paper 1 MS</a>
+            <a href="/English_Literature/P2" class="card"><span class="icon p-icon">📄</span> Paper 2</a>
+            <a href="/English_Literature/P2_MS" class="card"><span class="icon ms-icon">📝</span> Paper 2 MS</a>
+        </div>
+    </div>
+
+    <div class="subject-section">
+        <div class="subject-title">🌍 English as a Second Language</div>
+        <div class="grid">
+            <a href="/ESL/P1" class="card"><span class="icon p-icon">📄</span> Paper 1</a>
+            <a href="/ESL/P1_MS" class="card"><span class="icon ms-icon">📝</span> Paper 1 MS</a>
+            <a href="/ESL/P2" class="card"><span class="icon p-icon">📄</span> Paper 2</a>
+            <a href="/ESL/P2_MS" class="card"><span class="icon ms-icon">📝</span> Paper 2 MS</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
