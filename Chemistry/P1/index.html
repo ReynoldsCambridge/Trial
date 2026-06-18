@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Paper 1</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #37352f;
+            --border-color: #e9e9e6;
+            --hover-bg: #f7f7f5;
+            --accent-muted: #f1f1ef;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+        }
+        .back-link {
+            text-decoration: none;
+            color: #7c7a77;
+            font-size: 0.95rem;
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            transition: background 0.2s ease;
+        }
+        .back-link:hover {
+            background: var(--hover-bg);
+            color: var(--text-color);
+        }
+        header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .header-icon {
+            font-size: 2.5rem;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            letter-spacing: -0.5px;
+        }
+        .subtitle {
+            color: #7c7a77;
+            font-size: 1rem;
+            margin: 0;
+        }
+        .file-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .file-item {
+            background: transparent;
+            border: 1px solid transparent;
+            border-bottom: 1px solid var(--border-color);
+            padding: 12px 10px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.15s ease;
+            border-radius: 4px;
+        }
+        .file-item:hover {
+            background: var(--hover-bg);
+            border: 1px solid #d3d3d0;
+        }
+        .pdf-icon {
+            color: #e03131;
+            font-size: 1.2rem;
+        }
+        .file-name {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="/" class="back-link">← Back to Dashboard</a>
+
+    <header>
+        <div class="header-icon">🧪</div>
+        <div>
+            <h1>Chemistry: Paper 1</h1>
+            <p class="subtitle">Past Papers & Question Documents</p>
+        </div>
+    </header>
+
+    <div class="file-list">
+        <!-- Add your exact PDF file names here in the href="" -->
+        <a href="2019-May-P1-R.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2019 May Paper 1 (R)</span>
+        </a>
+
+        <a href="2020-January-P1-R.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2020 January Paper 1 (R)</span>
+        </a>
+
+        <a href="2020-May-P1-R.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2020 May Paper 1 (R)</span>
+        </a>
+
+        <a href="2021-January-P1-R.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2021 January Paper 1 (R)</span>
+        </a>
+        
+        <a href="2022-January-P1-R.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2022 January Paper 1 (R)</span>
+        </a>
+
+        <a href="2022-May-P1-R.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2022 May Paper 1 (R)</span>
+        </a>
+
+        <a href="2023-January-P1-R.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2023 January Paper 1 (R)</span>
+        </a>
+
+        <a href="2023-May-P1-R.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2023 May Paper 1 (R)</span>
+        </a>
+
+        <a href="2024-May-P1-R.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2024 May Paper 1 (R)</span>
+        </a>
+
+        <a href="2024-October-P1.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2024 October Paper 1</span>
+        </a>
+
+        <a href="2025-May-P1-R.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2025 May Paper 1 (R)</span>
+        </a>
+
+        <a href="2025-October-P1.pdf" class="file-item">
+            <span class="pdf-icon">📄</span>
+            <span class="file-name">2025 October Paper 1</span>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
